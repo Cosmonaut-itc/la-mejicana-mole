@@ -62,8 +62,186 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Manufacturing Process Section */}
+      <section id="manufacturing-process" className="py-16 md:py-24 bg-pink-50">
+        <div className="container px-4">
+          <div className="mx-auto max-w-3xl text-center mb-12">
+            <h2 className="text-3xl font-bold tracking-tighter text-[#87271e]">
+              Our Traditional Manufacturing Process
+            </h2>
+            <p className="mt-4 text-gray-700">
+              At La Mejicana, we take pride in our authentic, time-honored production methods that preserve the true
+              essence of Mexican mole.
+            </p>
+          </div>
+          <div className="grid gap-12 md:grid-cols-2 items-center">
+            <div className="space-y-6 order-2 md:order-1">
+              <h3 className="text-2xl font-bold text-[#87271e]">Natural Ingredients, Traditional Methods</h3>
+              <p className="text-gray-700">
+                Our manufacturing process begins with the careful selection of ingredients. We source only the highest
+                quality chiles, nuts, seeds, chocolate, and spices - all 100% natural with no artificial additives,
+                preservatives, or flavor enhancers.
+              </p>
+              <p className="text-gray-700">
+                Unlike mass-produced mole pastes that often contain artificial ingredients to extend shelf life and
+                reduce costs, we stay true to traditional methods. Our chiles are hand-selected, carefully dried, and
+                roasted to perfection to develop their complex flavors.
+              </p>
+              <p className="text-gray-700">
+                We toast our seeds and nuts in small batches to ensure optimal flavor development, and our chocolate is
+                pure, without the additives found in commercial varieties. This commitment to natural ingredients makes
+                our mole not only more authentic but significantly healthier.
+              </p>
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-pink-100 mt-8">
+                <h4 className="text-xl font-bold text-[#87271e] mb-4">Our Health Commitment</h4>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <svg
+                      className="h-6 w-6 text-[#fb399d] mr-2 flex-shrink-0"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>No artificial preservatives</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg
+                      className="h-6 w-6 text-[#fb399d] mr-2 flex-shrink-0"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>No artificial colors or flavors</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg
+                      className="h-6 w-6 text-[#fb399d] mr-2 flex-shrink-0"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>No MSG or flavor enhancers</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg
+                      className="h-6 w-6 text-[#fb399d] mr-2 flex-shrink-0"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>No hydrogenated oils</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg
+                      className="h-6 w-6 text-[#fb399d] mr-2 flex-shrink-0"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Lower sodium than commercial alternatives</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="relative h-[500px] w-full order-1 md:order-2">
+              <Image
+                src="/placeholder.svg?key=traditional-mole-making"
+                alt="Traditional Mole Manufacturing Process"
+                fill
+                className="object-cover rounded-lg"
+              />
+            </div>
+          </div>
+          <div className="mt-16 grid gap-8 md:grid-cols-3">
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-pink-100">
+              <div className="h-12 w-12 rounded-full bg-pink-100 flex items-center justify-center mb-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-[#fb399d]"
+                >
+                  <path d="M12 20v-6M6 20V10M18 20V4" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-[#87271e] mb-2">Small Batch Production</h3>
+              <p className="text-gray-700">
+                We produce our mole in small batches to ensure quality control and consistency. This allows us to
+                monitor each step of the process and maintain the authentic flavors that make our mole special.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-pink-100">
+              <div className="h-12 w-12 rounded-full bg-pink-100 flex items-center justify-center mb-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-[#fb399d]"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-[#87271e] mb-2">Slow Cooking Process</h3>
+              <p className="text-gray-700">
+                Our mole is slowly simmered to allow the flavors to develop fully and meld together. This traditional
+                slow-cooking method is essential to creating the depth and complexity that defines authentic mole.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-pink-100">
+              <div className="h-12 w-12 rounded-full bg-pink-100 flex items-center justify-center mb-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-[#fb399d]"
+                >
+                  <path d="M2.27 21.7s9.87-3.5 12.73-6.36a4.5 4.5 0 0 0-6.36-6.37C5.77 11.84 2.27 21.7 2.27 21.7zM15.42 15.42l6.37 6.37" />
+                  <path d="M19.73 11.27 22 13.54" />
+                  <path d="M15.42 6.96 18 9.54" />
+                  <path d="M11.27 2.73 13.54 5" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-[#87271e] mb-2">Artisanal Grinding</h3>
+              <p className="text-gray-700">
+                We use traditional stone grinding techniques to achieve the perfect texture. This method preserves the
+                essential oils and flavors of the ingredients, resulting in a more aromatic and flavorful mole.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Our Values Section */}
-      <section id="our-values" className="py-16 md:py-24 bg-pink-50">
+      <section id="our-values" className="py-16 md:py-24 bg-white">
         <div className="container px-4">
           <div className="mx-auto max-w-3xl text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tighter text-[#87271e]">Our Values</h2>
@@ -146,7 +324,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Team Section */}
-      <section id="our-team" className="py-16 md:py-24 bg-white">
+      <section id="our-team" className="py-16 md:py-24 bg-pink-50">
         <div className="container px-4">
           <div className="mx-auto max-w-3xl text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tighter text-[#87271e]">Our Team</h2>
@@ -189,7 +367,7 @@ export default function AboutPage() {
       </section>
 
       {/* Distributor Section */}
-      <section id="distributor" className="py-16 md:py-24 bg-pink-50">
+      <section id="distributor" className="py-16 md:py-24 bg-white">
         <div className="container px-4">
           <div className="mx-auto max-w-5xl rounded-lg bg-white p-8 md:p-12 shadow-lg border border-gray-100">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">

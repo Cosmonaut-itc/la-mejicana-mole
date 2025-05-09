@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ChevronRight, Star } from "lucide-react"
 import Header from "@/components/header"
@@ -22,12 +23,16 @@ export default function Home() {
                 with authentic recipes passed down through generations.
               </p>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Button className="bg-[#fb399d] hover:bg-[#e02e8a]">
-                  Learn More <ChevronRight className="ml-2 h-4 w-4" />
-                </Button>
-                <Button variant="outline" className="border-[#fb399d] text-[#fb399d]">
-                  Contact Sales
-                </Button>
+                <Link href="/about">
+                  <Button className="bg-[#fb399d] hover:bg-[#e02e8a]">
+                    Learn More <ChevronRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
+                <Link href="/contact">
+                  <Button variant="outline" className="border-[#fb399d] text-[#fb399d]">
+                    Contact Sales
+                  </Button>
+                </Link>
               </div>
             </div>
             <div className="flex justify-center">
@@ -152,6 +157,11 @@ export default function Home() {
               <p className="text-center text-gray-700">
                 Our classic recipe with over 20 ingredients including chiles, chocolate, and spices.
               </p>
+              <Link href="/products#traditional-mole">
+                <Button variant="outline" className="border-[#fb399d] text-[#fb399d]">
+                  Learn More
+                </Button>
+              </Link>
             </div>
             <div className="flex flex-col items-center space-y-4">
               <div className="relative h-[200px] w-[200px] overflow-hidden rounded-lg">
@@ -161,6 +171,11 @@ export default function Home() {
               <p className="text-center text-gray-700">
                 A hotter version of our traditional mole with extra chiles for those who love heat.
               </p>
+              <Link href="/products#spicy-mole">
+                <Button variant="outline" className="border-[#fb399d] text-[#fb399d]">
+                  Learn More
+                </Button>
+              </Link>
             </div>
             <div className="flex flex-col items-center space-y-4">
               <div className="relative h-[200px] w-[200px] overflow-hidden rounded-lg">
@@ -170,6 +185,11 @@ export default function Home() {
               <p className="text-center text-gray-700">
                 A lighter, fresher mole made with green chiles, pumpkin seeds, and herbs.
               </p>
+              <Link href="/products#green-mole">
+                <Button variant="outline" className="border-[#fb399d] text-[#fb399d]">
+                  Learn More
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -234,7 +254,9 @@ export default function Home() {
           </div>
           <div className="mt-12 flex flex-col items-center justify-center space-y-4">
             <p className="font-medium">Can't find our products near you?</p>
-            <Button className="bg-[#fb399d] hover:bg-[#e02e8a]">Contact Us</Button>
+            <Link href="/contact">
+              <Button className="bg-[#fb399d] hover:bg-[#e02e8a]">Contact Us</Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -253,10 +275,14 @@ export default function Home() {
                   and commitment to quality, they ensure our authentic Mexican mole reaches customers nationwide.
                 </p>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button className="bg-[#fb399d] hover:bg-[#e02e8a]">Contact Durvill Foods</Button>
-                  <Button variant="outline" className="border-[#fb399d] text-[#fb399d]">
-                    Learn More
-                  </Button>
+                  <Link href="/contact#distributor-contact">
+                    <Button className="bg-[#fb399d] hover:bg-[#e02e8a]">Contact Durvill Foods</Button>
+                  </Link>
+                  <Link href="/about#distributor">
+                    <Button variant="outline" className="border-[#fb399d] text-[#fb399d]">
+                      Learn More
+                    </Button>
+                  </Link>
                 </div>
               </div>
               <div className="flex justify-center">
