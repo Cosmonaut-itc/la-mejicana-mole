@@ -44,13 +44,10 @@ export default function HomePage() {
               <CldImage
                 src="Banermolelamejicana_1_sc9hea"
                 alt="Traditional Mole Dish"
-                width={500}
-                height={400}
-                className="rounded-lg shadow-lg"
-                crop={{
-                  type: "auto",
-                  source: true,
-                }}
+                width="500"
+                height="400"
+                className="rounded-lg shadow-lg w-full h-auto"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
             <div className="order-1 md:order-2 text-center md:text-left">
@@ -129,16 +126,13 @@ export default function HomePage() {
       {/* Products Section */}
       <section className="bg-pink-50 py-16 relative">
         {/* Background Image */}
-        <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 opacity-5">
           <CldImage
             src="molelamejicanabanerhome_vshok0"
             alt="Mole Background"
             fill
             className="object-cover"
-            crop={{
-              type: "auto",
-              source: true,
-            }}
+            sizes="100vw"
           />
         </div>
         <div className="container mx-auto px-4 relative z-10">
@@ -150,13 +144,10 @@ export default function HomePage() {
                 <CldImage
                   src="Moletradicionallamejicana_ilt3mr"
                   alt="Traditional Mole"
-                  width={250}
-                  height={200}
-                  className="mx-auto rounded-lg"
-                  crop={{
-                    type: "auto",
-                    source: true,
-                  }}
+                  width="250"
+                  height="200"
+                  className="mx-auto rounded-lg w-full h-auto max-w-[250px]"
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
               <p className="text-sm text-gray-600 mb-4">
@@ -175,13 +166,10 @@ export default function HomePage() {
                 <CldImage
                   src="Pipianlamejicana_kzzmnw"
                   alt="Pipián"
-                  width={250}
-                  height={200}
-                  className="mx-auto rounded-lg"
-                  crop={{
-                    type: "auto",
-                    source: true,
-                  }}
+                  width="250"
+                  height="200"
+                  className="mx-auto rounded-lg w-full h-auto max-w-[250px]"
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
               <p className="text-sm text-gray-600 mb-4">
@@ -200,13 +188,10 @@ export default function HomePage() {
                 <CldImage
                   src="Moleverdelamejicana_qdxhlf"
                   alt="Green Mole"
-                  width={250}
-                  height={200}
-                  className="mx-auto rounded-lg"
-                  crop={{
-                    type: "auto",
-                    source: true,
-                  }}
+                  width="250"
+                  height="200"
+                  className="mx-auto rounded-lg w-full h-auto max-w-[250px]"
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
               <p className="text-sm text-gray-600 mb-4">
@@ -237,13 +222,10 @@ export default function HomePage() {
                   <CldImage
                     src="Enmoladaslamejicana_whsdib"
                     alt="Enmoladas"
-                    width={400}
-                    height={300}
-                    className="rounded-lg shadow-lg"
-                    crop={{
-                      type: "auto",
-                      source: true,
-                    }}
+                    width="400"
+                    height="300"
+                    className="rounded-lg shadow-lg w-full h-auto"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
                 <div>
@@ -272,13 +254,10 @@ export default function HomePage() {
                   <CldImage
                     src="albondigasconmolelamejicana_gmy0j4"
                     alt="Chicken Meatballs"
-                    width={400}
-                    height={300}
-                    className="rounded-lg shadow-lg"
-                    crop={{
-                      type: "auto",
-                      source: true,
-                    }}
+                    width="400"
+                    height="300"
+                    className="rounded-lg shadow-lg w-full h-auto"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
               </div>
@@ -314,13 +293,10 @@ export default function HomePage() {
                 <CldImage
                   src="durvillfoods_q6ubxj"
                   alt="Durvill Foods"
-                  width={300}
-                  height={150}
-                  className="mx-auto"
-                  crop={{
-                    type: "auto",
-                    source: true,
-                  }}
+                  width="300"
+                  height="150"
+                  className="mx-auto w-full h-auto max-w-[300px]"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
             </div>
