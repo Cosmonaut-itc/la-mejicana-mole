@@ -1,7 +1,10 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { CldImage } from "next-cloudinary"
 
 export default function HomePage() {
   return (
@@ -38,12 +41,16 @@ export default function HomePage() {
         <div className="container mx-auto px-4 py-16">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="order-2 md:order-1">
-              <Image
-                src="/placeholder.svg?height=400&width=500"
+              <CldImage
+                src="Banermolelamejicana_1_sc9hea"
                 alt="Traditional Mole Dish"
                 width={500}
                 height={400}
                 className="rounded-lg shadow-lg"
+                crop={{
+                  type: "auto",
+                  source: true,
+                }}
               />
             </div>
             <div className="order-1 md:order-2 text-center md:text-left">
@@ -120,19 +127,36 @@ export default function HomePage() {
       </section>
 
       {/* Products Section */}
-      <section className="bg-pink-50 py-16">
-        <div className="container mx-auto px-4">
+      <section className="bg-pink-50 py-16 relative">
+        {/* Background Image */}
+        <div className="absolute inset-0 opacity-10">
+          <CldImage
+            src="molelamejicanabanerhome_vshok0"
+            alt="Mole Background"
+            fill
+            className="object-cover"
+            crop={{
+              type: "auto",
+              source: true,
+            }}
+          />
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-2 text-pink-600">Our product family</h2>
           <div className="grid md:grid-cols-3 gap-8 mt-12">
             <div className="text-center">
               <h3 className="text-lg font-semibold mb-4 text-gray-700 uppercase tracking-wide">TRADICIONAL MOLE</h3>
               <div className="mb-4">
-                <Image
-                  src="/placeholder.svg?height=200&width=250"
+                <CldImage
+                  src="Moletradicionallamejicana_ilt3mr"
                   alt="Traditional Mole"
                   width={250}
                   height={200}
                   className="mx-auto rounded-lg"
+                  crop={{
+                    type: "auto",
+                    source: true,
+                  }}
                 />
               </div>
               <p className="text-sm text-gray-600 mb-4">
@@ -148,12 +172,16 @@ export default function HomePage() {
             <div className="text-center">
               <h3 className="text-lg font-semibold mb-4 text-gray-700 uppercase tracking-wide">PIPIÁN</h3>
               <div className="mb-4">
-                <Image
-                  src="/placeholder.svg?height=200&width=250"
+                <CldImage
+                  src="Pipianlamejicana_kzzmnw"
                   alt="Pipián"
                   width={250}
                   height={200}
                   className="mx-auto rounded-lg"
+                  crop={{
+                    type: "auto",
+                    source: true,
+                  }}
                 />
               </div>
               <p className="text-sm text-gray-600 mb-4">
@@ -169,12 +197,16 @@ export default function HomePage() {
             <div className="text-center">
               <h3 className="text-lg font-semibold mb-4 text-gray-700 uppercase tracking-wide">GREEN MOLE</h3>
               <div className="mb-4">
-                <Image
-                  src="/placeholder.svg?height=200&width=250"
+                <CldImage
+                  src="Moleverdelamejicana_qdxhlf"
                   alt="Green Mole"
                   width={250}
                   height={200}
                   className="mx-auto rounded-lg"
+                  crop={{
+                    type: "auto",
+                    source: true,
+                  }}
                 />
               </div>
               <p className="text-sm text-gray-600 mb-4">
@@ -202,12 +234,16 @@ export default function HomePage() {
             <div className="space-y-8">
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
+                  <CldImage
+                    src="Enmoladaslamejicana_whsdib"
                     alt="Enmoladas"
                     width={400}
                     height={300}
                     className="rounded-lg shadow-lg"
+                    crop={{
+                      type: "auto",
+                      source: true,
+                    }}
                   />
                 </div>
                 <div>
@@ -233,12 +269,16 @@ export default function HomePage() {
                   <Button className="bg-orange-500 hover:bg-orange-600 text-white px-6">Read more</Button>
                 </div>
                 <div className="order-1 md:order-2">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
+                  <CldImage
+                    src="albondigasconmolelamejicana_gmy0j4"
                     alt="Chicken Meatballs"
                     width={400}
                     height={300}
                     className="rounded-lg shadow-lg"
+                    crop={{
+                      type: "auto",
+                      source: true,
+                    }}
                   />
                 </div>
               </div>
@@ -271,12 +311,16 @@ export default function HomePage() {
                 </p>
               </div>
               <div className="text-center">
-                <Image
-                  src="/placeholder.svg?height=150&width=300"
+                <CldImage
+                  src="durvillfoods_q6ubxj"
                   alt="Durvill Foods"
                   width={300}
                   height={150}
                   className="mx-auto"
+                  crop={{
+                    type: "auto",
+                    source: true,
+                  }}
                 />
               </div>
             </div>
